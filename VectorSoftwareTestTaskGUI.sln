@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorSoftwareTestTaskGUI", "VectorSoftwareTestTaskGUI\VectorSoftwareTestTaskGUI.csproj", "{54B9FCB2-B597-4A96-ABDD-A36A17F5693F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54B9FCB2-B597-4A96-ABDD-A36A17F5693F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B9FCB2-B597-4A96-ABDD-A36A17F5693F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B9FCB2-B597-4A96-ABDD-A36A17F5693F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B9FCB2-B597-4A96-ABDD-A36A17F5693F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DEFA6D71-8F88-4E92-9CD8-C51B22DC1494}
+	EndGlobalSection
+EndGlobal

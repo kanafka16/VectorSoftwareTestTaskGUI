@@ -13,6 +13,9 @@ namespace VectorSoftwareTestTaskGUI.Tools
         [SetUp]
         public void BeforeEachMethod()
         {
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument("--disable-blink-features=AutomationControlled");
+
             driver = new ChromeDriver();
 
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);

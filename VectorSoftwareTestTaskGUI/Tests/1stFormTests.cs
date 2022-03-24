@@ -20,7 +20,8 @@ namespace VectorSoftwareTestTaskGUI
     {
         protected override string HomePageURL { get => "https://tarasmysko89.wixsite.com/vectortesttask01"; }
 
-        User user, invalidEmailUser;
+        User user;
+        User invalidEmailUser;
 
         [OneTimeSetUp]
         public void BeforeAllMethods()

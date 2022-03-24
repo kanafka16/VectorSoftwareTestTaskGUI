@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using VectorSoftwareTestTaskGUI.Pages;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;

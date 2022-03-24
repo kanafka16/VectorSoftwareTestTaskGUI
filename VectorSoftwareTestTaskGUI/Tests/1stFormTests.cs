@@ -1,11 +1,14 @@
 using NUnit.Framework;
 using VectorSoftwareTestTaskGUI.Pages;
 using VectorSoftwareTestTaskGUI.Tools;
+using VectorSoftwareTestTaskGUI.Data;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 using Allure.Commons;
 using NUnit.Allure.Attributes;
 using NUnit.Allure.Core;
-
-using VectorSoftwareTestTaskGUI.Data;
+using System;
 
 namespace VectorSoftwareTestTaskGUI
 {
@@ -39,6 +42,9 @@ namespace VectorSoftwareTestTaskGUI
             homePageDriver.EmailInput(user.Email);
             homePageDriver.JoinNowClick();
 
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+            wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//div[@id='comp-k5h9ba5e']")));
+
             string actualSuccessMessage = homePageDriver.SuccessfulSubmittingMessage.Text;
 
             Assert.That(actualSuccessMessage.Length != 0);
@@ -64,6 +70,9 @@ namespace VectorSoftwareTestTaskGUI
             homePageDriver.FullNameInput(invalidEmailUser.FullName);
             homePageDriver.EmailInput(invalidEmailUser.Email);
             homePageDriver.JoinNowClick();
+
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+            wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//div[@id='comp-k5h9ba5e']")));
 
             string actualSuccessMessage = homePageDriver.SuccessfulSubmittingMessage.Text;
 

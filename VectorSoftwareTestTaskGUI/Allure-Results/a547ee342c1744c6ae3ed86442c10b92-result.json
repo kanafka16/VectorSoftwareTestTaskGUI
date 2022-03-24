@@ -1,0 +1,83 @@
+{
+  "uuid": "8340beee-1122-4359-8053-bf8a8aa254ef-tr-0-1002",
+  "historyId": "VectorSoftwareTestTaskGUI.FirstFormTests.SubmitButtonTextSpelling",
+  "fullName": "VectorSoftwareTestTaskGUI.FirstFormTests.SubmitButtonTextSpelling",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-3I1UEGC"
+    },
+    {
+      "name": "package",
+      "value": "VectorSoftwareTestTaskGUI"
+    },
+    {
+      "name": "testMethod",
+      "value": "SubmitButtonTextSpelling"
+    },
+    {
+      "name": "testClass",
+      "value": "FirstFormTests"
+    },
+    {
+      "name": "tag",
+      "value": "FirstFormTests"
+    },
+    {
+      "name": "tag",
+      "value": "FirstForm"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "owner",
+      "value": "KfN"
+    }
+  ],
+  "links": [],
+  "name": "SubmitButtonTextSpelling",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  String lengths are both 8. Strings differ at index 2.\r\n  Expected: \"Join Now\"\r\n  But was:  \"John Now\"\r\n  -------------^\r\n",
+    "trace": "   at VectorSoftwareTestTaskGUI.FirstFormTests.SubmitButtonTextSpelling() in C:\\Users\\yurii\\My Drive\\Лекції і шось таке\\SET\\INTERVIEWS\\VectorSoftwareTestTaskData\\VectorSoftwareTestTaskGUI\\VectorSoftwareTestTaskGUI\\Tests\\1stFormTests.cs:line 70\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "SubmitButtonTextSpelling",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  String lengths are both 8. Strings differ at index 2.\r\n  Expected: \"Join Now\"\r\n  But was:  \"John Now\"\r\n  -------------^\r\n",
+        "trace": "   at VectorSoftwareTestTaskGUI.FirstFormTests.SubmitButtonTextSpelling() in C:\\Users\\yurii\\My Drive\\Лекції і шось таке\\SET\\INTERVIEWS\\VectorSoftwareTestTaskData\\VectorSoftwareTestTaskGUI\\VectorSoftwareTestTaskGUI\\Tests\\1stFormTests.cs:line 70\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "376ef96ba1cc41b8b8e4c9a95f62330d-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1648152806948,
+      "stop": 1648152815330
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1648152806946,
+  "stop": 1648152815363
+}

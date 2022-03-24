@@ -13,6 +13,9 @@ using System;
 namespace VectorSoftwareTestTaskGUI
 {
     [TestFixture]
+    [AllureNUnit] 
+    //Allure-Reports directory won`t exist on this github repo due to specific symbols in the project`s local directory :)
+    [Category("FirstFormTests")]
     public class FirstFormTests: TestRunner
     {
         protected override string HomePageURL { get => "https://tarasmysko89.wixsite.com/vectortesttask01"; }
@@ -23,17 +26,20 @@ namespace VectorSoftwareTestTaskGUI
         public void BeforeAllMethods()
         {
             user = User.CreateBuilder()
-                .SetFullName("Seva Noob")
-                .SetEmail("seva.noob@gmail.com")
+                .SetFullName("Sevka Noob")
+                .SetEmail("sevka.noob@gmail.com")
                 .Build();
 
             invalidEmailUser = User.CreateBuilder()
-                .SetFullName("Seva Pro")
-                .SetEmail("seva.pro.com")
+                .SetFullName("Sevka Pro")
+                .SetEmail("sevka.pro.com")
                 .Build();
         }
 
         [Test]
+        [AllureTag("FirstForm")]
+        [AllureSeverity(SeverityLevel.normal)]
+        [AllureOwner("KfN")]
         public void SuccessfulSubmitting() //This test doesn`t check message(-s) spelling!
         {
             HomePage homePageDriver = new HomePage(driver);
@@ -51,6 +57,9 @@ namespace VectorSoftwareTestTaskGUI
         }
 
         [Test]
+        [AllureTag("FirstForm")]
+        [AllureSeverity(SeverityLevel.normal)]
+        [AllureOwner("KfN")]
         public void SubmitButtonTextSpelling()
         {
             string expectedButtonText = "Join Now";
@@ -63,6 +72,9 @@ namespace VectorSoftwareTestTaskGUI
         }
 
         [Test]
+        [AllureTag("FirstForm")]
+        [AllureSeverity(SeverityLevel.normal)]
+        [AllureOwner("KfN")]
         public void EmailFormat() //This test doesn`t check message(-s) spelling!
         {
             HomePage homePageDriver = new HomePage(driver);
